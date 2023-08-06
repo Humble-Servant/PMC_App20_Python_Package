@@ -1,0 +1,13 @@
+create dir --> "invoicing"
+
+create "__init__.py" --> can be used to reference functions --> from invoice import generate
+
+search PyPI for name  -->  change name in setup.py if necessary to deconflict
+
+In Terminal:
+
+    > python setup.py sdist
+
+    > pip install twine
+
+    > twine upload --skip-existing dist/*
